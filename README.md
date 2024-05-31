@@ -1,6 +1,6 @@
 - 👋 Hi, I'm Vasil
-- 👀 My main programming language is C++. Currently i'm learning Python, I feel myself confident with Pandas, Sklearn.
-- 🌱 I have experience in ML. 
+- 👀 My main programming language is Python. I previously programmed in C++. I feel myself confident with Pandas, Sklearn.
+- 🌱 I have experience in DS, DA, ML. 
 - 💞️ I am currently studying NN at the Deep Learning School.
 - 📫 How to reach me: https://t.me/vasil_telegram
 
