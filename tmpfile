@@ -1,2 +1,15 @@
 Файл обмена данными
 
+select t.segment_name
+      ,t.segment_type
+      ,t.partition_name
+      ,t.tablespace_name
+      ,trunc(bytes / (1024 * 1024), 2) mb
+      ,trunc(bytes / (1024 * 1024 * 1024), 2) gb
+      ,tlbA.comments
+from user_segments t
+LEFT JOIN 
+     (SELECT * FROM all_tab_comments WHERE lower(TABLE_name) LIKE 'vvo_%') tlbA ON t.segment_name = tlbA.table_name
+where 1 = 1
+and lower(segment_name) like 'vvo_%'
+order by trunc(bytes / (1024 * 1024), 2) desc
